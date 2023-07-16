@@ -11,6 +11,11 @@ export const SummaryContainer = styled.section`
     gap: 2rem;
 
     margin-top: -5rem;
+
+    @media(max-width: 685px){
+        gap: 0.5rem;
+        padding: 5px;
+    }
 `
 interface SummaryCardProps {
     variant?: "green";
@@ -36,4 +41,11 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     ${props => props.variant === "green" && css`
         background: ${props.theme["green-700"]};
     `}
+
+    @media(max-width: 685px){
+        padding: 1rem;
+        strong{
+            font-size: 1.15rem;
+        }
+    }
 `

@@ -5,6 +5,10 @@ export const TransactionsContainer = styled.main`
     max-width: 1120px;
     margin: 4rem auto 0;
     padding: 0 1.5em;
+
+    @media(max-width: 685px){
+        padding: 0 5px;
+    }
 `
 export const TransactionsTable = styled.table`
     width: 100%;
@@ -35,6 +39,12 @@ export const TransactionsTable = styled.table`
         &:hover svg{
             transition: 0.2s;
             transform: scale(1.2);
+        }
+    }
+
+    @media (max-width: 685px){
+        td{
+            padding: 0.75rem;
         }
     }
 `

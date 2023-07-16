@@ -35,4 +35,8 @@ export const SearchFormContainer = styled.form`
             color: ${props => props.theme["white"]};
         }
     }
+
+    @media(max-width: 685px){
+        gap: 0.5rem;
+    }
 `

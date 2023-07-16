@@ -66,6 +66,10 @@ export const Content = styled(Dialog.Content)`
             }
         }
     }
+
+    @media(max-width: 685px){
+        min-width: 100vw;
+    }
 `
 
 export const TransactionType = styled(RadioGroup.Root)`
